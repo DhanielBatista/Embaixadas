@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Hegrist\\source\\repos\\Embaixadas\\Embaixadas\\Embaixadas.csproj": {}
+    "C:\\Users\\Hengrist\\source\\repos\\Embaixadas\\Embaixadas\\Embaixadas.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Hegrist\\source\\repos\\Embaixadas\\Embaixadas\\Embaixadas.csproj": {
+    "C:\\Users\\Hengrist\\source\\repos\\Embaixadas\\Embaixadas\\Embaixadas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Hegrist\\source\\repos\\Embaixadas\\Embaixadas\\Embaixadas.csproj",
+        "projectUniqueName": "C:\\Users\\Hengrist\\source\\repos\\Embaixadas\\Embaixadas\\Embaixadas.csproj",
         "projectName": "Embaixadas",
-        "projectPath": "C:\\Users\\Hegrist\\source\\repos\\Embaixadas\\Embaixadas\\Embaixadas.csproj",
-        "packagesPath": "C:\\Users\\Hegrist\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Hegrist\\source\\repos\\Embaixadas\\Embaixadas\\obj\\",
+        "projectPath": "C:\\Users\\Hengrist\\source\\repos\\Embaixadas\\Embaixadas\\Embaixadas.csproj",
+        "packagesPath": "C:\\Users\\Hengrist\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Hengrist\\source\\repos\\Embaixadas\\Embaixadas\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Hegrist\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Hengrist\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -69,24 +69,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x86",
-              "version": "[5.0.15, 5.0.15]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -95,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

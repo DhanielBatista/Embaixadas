@@ -1,0 +1,53 @@
+﻿@model IEnumerable<Embaixadas.Models.Embaixada>
+
+@{
+    ViewData["Title"] = "EmbaixadaList";
+}
+
+<h1>EmbaixadaList</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.EmbaixadaNome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmbaixadaEndereco)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmbaixadaNumero)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmbaixadaEmail)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmbaixadaNome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmbaixadaEndereco)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmbaixadaNumero)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmbaixadaEmail)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.EmbaixadaId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.EmbaixadaId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.EmbaixadaId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

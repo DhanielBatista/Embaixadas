@@ -37,7 +37,12 @@ namespace Embaixadas.Migrations
                     b.Property<string>("EmbaixadaNumero")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("PaisId")
+                        .HasColumnType("int");
+
                     b.HasKey("EmbaixadaId");
+
+                    b.HasIndex("PaisId");
 
                     b.ToTable("Embaixadas");
                 });
@@ -52,12 +57,31 @@ namespace Embaixadas.Migrations
                     b.Property<string>("PaisCapital")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("PaisMoeda")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("PaisNome")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("PaisId");
 
                     b.ToTable("Pais");
+                });
+
+            modelBuilder.Entity("Embaixadas.Models.Embaixada", b =>
+                {
+                    b.HasOne("Embaixadas.Models.Pais", "Pais")
+                        .WithMany("Embaixadas")
+                        .HasForeignKey("PaisId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Pais");
+                });
+
+            modelBuilder.Entity("Embaixadas.Models.Pais", b =>
+                {
+                    b.Navigation("Embaixadas");
                 });
 #pragma warning restore 612, 618
         }
